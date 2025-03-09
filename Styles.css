@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #a7c6ed; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav.topnav {
+    background-color: #6fa3e8; 
+    overflow: hidden;
+}
+
+nav.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav.topnav a:hover {
+    background-color: #4f8cd7;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0074d9;
+    margin-bottom: 10px;
+}
+
+audio, video {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 2px solid #0074d9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff4500; 
+    text-decoration: underline;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a[href$=".pdf"] {
+    color: red;
+}
+
+a[target] {
+    font-weight: bold;
+}
+
+a[title] {
+    text-decoration: underline;
+}
+
+a[href*="reasons.html"] {
+    background-color: #ffeb3b;
+}
+
+footer {
+    background-color: #a7c6ed; 
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.intro, .purpose, .importance, .link-section {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+.reasons, .effects {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+.intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
+    background-color: #d0eaff;
+    transform: scale(1.05) translateY(-10px);
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+/* Image Section */
+.image-section {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.education-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #0074d9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+.flying-book-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    position: relative;
+}
+
+.flying-book {
+    position: absolute;
+    bottom: 10%;
+    left: -200px;
+    animation: flyBook 5s ease-in-out infinite;
+}
+
+@keyframes flyBook {
+    0% {
+        left: -200px; 
+        transform: rotate(0deg); 
+    }
+    50% {
+        left: 50%; 
+        transform: rotate(10deg); 
+    }
+    100% {
+        left: 100%;
+        transform: rotate(-10deg);
+    }
+}
+icon {
+    width: 116px; 
+    height: 235px;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+}
+
+.icon-email {
+    background-position: -116px 0;
+}
+
+.icon-phone {
+    background-position: -232px 0; 
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.quiz-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-btn {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.quiz-btn:hover {
+    transform: scale(1.1);
+    background-color: #005bb5;
+}
